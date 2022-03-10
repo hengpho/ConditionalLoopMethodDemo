@@ -1,0 +1,41 @@
+[33mcommit eab0a50d7dadb86064db751186e1142c5d0ccc76[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Heng Pho <hengpho98@gmail.com>
+Date:   Thu Mar 10 11:52:38 2022 -0600
+
+    Print a document has power, hasPaper and the ink level >= 10
+
+[33mcommit 305069ae61afc59c1703421603df1944dc99c46f[m
+Author: Heng Pho <hengpho98@gmail.com>
+Date:   Thu Mar 10 11:45:53 2022 -0600
+
+    Code before deleting
+
+[33mcommit 358660756d9eea6aae37e630e16a4d5e2ed3018b[m
+Author: Heng Pho <hengpho98@gmail.com>
+Date:   Thu Mar 10 10:57:59 2022 -0600
+
+    Resolve bug with range comparisons
+
+[33mcommit 297c3f5b04d70a22545a1b572e4b36195ec767fa[m
+Author: Heng Pho <hengpho98@gmail.com>
+Date:   Thu Mar 10 10:54:10 2022 -0600
+
+    Output using turnary
+
+[33mcommit adaa14700a824f5b00e5faa2fc5ee22af8592b4d[m
+Author: Heng Pho <hengpho98@gmail.com>
+Date:   Thu Mar 10 10:30:18 2022 -0600
+
+    Output a string showing results of the 'in range' method
+
+[33mcommit 9989db915d3d80f1665f6ea7150551f510a60218[m
+Author: Heng Pho <hengpho98@gmail.com>
+Date:   Thu Mar 10 09:51:36 2022 -0600
+
+    Implement method to check if a number is in range of another number
+
+[33mcommit f39c0aa2659aca7efcbf9459ec85dbf1c773e6c3[m
+Author: Heng Pho <hengpho98@gmail.com>
+Date:   Thu Mar 10 09:32:20 2022 -0600
+
+    Initial commit

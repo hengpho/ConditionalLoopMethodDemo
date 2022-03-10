@@ -12,8 +12,7 @@ namespace ConditionalLoopMethodDemo
             Console.Write("Do we have paper? (y/n): ");
             bool hasPaper = Console.ReadLine().ToUpper() == "Y";
 
-            Console.Write("What is the ink level?: ");
-            int inkLevel = int.Parse(Console.ReadLine());
+            int inkLevel = PromptUser4Int("What's the ink level?: ");
 
             PrintDoc(hasPower, hasPaper, inkLevel);
 
@@ -24,10 +23,28 @@ namespace ConditionalLoopMethodDemo
         private static void PrintDoc(bool hasPower, bool hasPaper, int inkLevel)
         {
             //void - we are not returning anything
-            string result = hasPaper && hasPower && inkLevel >= 10 ? "Printing" : "Unable to print";
-            Console.Write(result);
+         //   string result = hasPaper && hasPower && inkLevel >= 10 ? "Printing" : "Unable to print";
+          //  Console.Write(result);
 
             //Console.Write(hasPaper && hasPower && inkLevel >= 10 ? "Printing" : "Unable to print"); --- Another way to write it
+        }
+        private static string PromptUser(string message)
+        {
+            Console.Write(message);
+            return Console.ReadLine();
+        }
+
+        private static int PromptUser4Int(string message)
+        {
+            //TODO: While the user's input is not parse-able as an int, continue to ask them to comply.
+            int result;
+            while (!int.TryParse(PromptUser(message), out result))
+            {
+                PromptUser("Invalid Input! Press any key to continue");
+            }
+            return result;
+                    
+        
         }
     }
 }
