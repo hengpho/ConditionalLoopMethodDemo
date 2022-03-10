@@ -17,7 +17,11 @@ namespace ConditionalLoopMethodDemo
             Console.Write("What is the range: ");
             int range = int.Parse(Console.ReadLine());
 
-            Console.WriteLine($"Given a starting number of: {startingNum} and a target number: {targetNum}. It's {IsWithinRange(startingNum, targetNum, range)}");
+            //turnary - if it meets requirements ? true do this : false do this;
+            string results = IsWithinRange(startingNum, targetNum, range) ? "Its within range." : "It's not within range.";
+            Console.WriteLine($"Given a starting number of: {startingNum} and a target number: {targetNum}. {results}");
+
+            //Console.WriteLine($"Given a starting number of: {startingNum} and a target number: {targetNum}. It's {IsWithinRange(startingNum, targetNum, range)}");
 
         }
 
@@ -29,3 +33,13 @@ namespace ConditionalLoopMethodDemo
         }
     }
 }
+
+
+/* Once inside the Directory to start
+ * git init (initiate, will see (master) in console)
+ * git status (show status of files)
+ * touch .gitignore (Creates a .gitignore file - if .gitignore file does not exist, paste content from sources into .gitignore)
+ * git add . (add all within directory)
+ * git commit -m "Initial commit" (for first commit, change name to what was updated) 
+ * git log (show all past commits in a log)
+ */
