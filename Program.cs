@@ -28,8 +28,8 @@ namespace ConditionalLoopMethodDemo
         //access modifier - static (or not) - return type - name(params in here)
         private static bool IsWithinRange(int num, int target, int range)
         {
-            //make sure the return type is bool like we declared above, cannot return "hello" etc.
-            return (num - target) <= range;
+            //make sure the return type is bool like we declared above, cannot return "hello" which is a string etc.
+            return (num - target) <= range && (num - target) >= -range;
         }
     }
 }
